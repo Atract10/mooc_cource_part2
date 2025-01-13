@@ -10,3 +10,9 @@ Please type in a number: 1.34
 Integer part: 1
 Decimal part: 0.34
 """
+
+float_number = float(input("Please type in a number: "))
+int_part = int(float_number)
+dec_part = float_number - int_part
+print(f"Integer part:  {int_part}")
+print(f"Decimal part: {dec_part}")

@@ -17,3 +17,9 @@ Sample output
 Please type in a word: b
 Thank you!
 """
+
+word = input("Please type in a word: ")
+word_len = len(word)
+if word_len > 1:
+    print(f"There are {word_len} letters in the word {word}")
+print("Thank you!")

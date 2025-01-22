@@ -30,11 +30,12 @@ It was a dark and stormy night
 """
 
 story = ""
-
+previous_word = ""
 while True:
-    word = input("Please type in a word: ")
-    if word == "end":
+    new_word = input("Please type in a word: ")
+    if new_word == "end" or new_word == previous_word:
         print(story)
         break
     else:
-        story += word + " "
+        previous_word = new_word
+        story += new_word + " "

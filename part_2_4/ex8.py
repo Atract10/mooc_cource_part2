@@ -53,14 +53,26 @@ Negative numbers 1
 print("Please type in integer numbers. Type in 0 to finish.")
 number_input_times = 0
 numbers_sum = 0
-numbers_mean = numbers_sum / number_input_times
+positive_numbers = 0
+negative_numbers = 0
+numbers_mean = 0
+
 while True:
     number = int(input("Number: "))
     if number == 0:
         break
-    number += 1
     numbers_sum += number
+    number_input_times += +1
+    if number < 0:
+        negative_numbers += 1
+    else:
+        positive_numbers += 1
+
+if numbers_sum != 0 and number_input_times != 0:
+    numbers_mean = numbers_sum / number_input_times
 
 print(f"Numbers typed in {number_input_times}")
 print(f"The sum of the numbers is {numbers_sum}")
 print(f"The mean of the numbers is {numbers_mean}")
+print(f"Positive numbers {positive_numbers}")
+print(f"Negative numbers {negative_numbers}")

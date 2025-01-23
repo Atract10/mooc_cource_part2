@@ -51,7 +51,9 @@ Negative numbers 1
 """
 
 print("Please type in integer numbers. Type in 0 to finish.")
+number_input_times = 0
 while True:
     number = int(input("Number: "))
     if number == 0:
         break
+    number += 1
